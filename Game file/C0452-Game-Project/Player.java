@@ -20,7 +20,6 @@ public class Player extends Actor
 
     //frame tracker
     private int frame;
-    private int seconds = frame/60;
     
     private int animationCounter = 0;
     int divisor = 10;
@@ -33,8 +32,6 @@ public class Player extends Actor
         movement();
         faceMouse();
         shootProjectile();
-        
-        frame++;
     }
     
     public void movement()

@@ -8,6 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Lvl1 extends World
 {
+    public int frame = 0;
+    public double gameSeconds = frame/60;
+    
     Player mainPlayer = new Player();
 
     /**
@@ -15,8 +18,9 @@ public class Lvl1 extends World
      * 
      */
     public Lvl1()
-    {    
-        super(1536, 864, 1);
+    {    super(1536, 864, 1);
+        
+        frame++;
         
         addObject(mainPlayer, 196, 188);
     }
@@ -24,5 +28,10 @@ public class Lvl1 extends World
     public Player getPlayer()
     {
         return mainPlayer;
+    }
+    
+    public double getTime()
+    {
+        return gameSeconds;
     }
 }
