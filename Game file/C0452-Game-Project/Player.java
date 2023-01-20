@@ -101,6 +101,7 @@ public class Player extends Actor
         
         DummyProjectile projectile = new DummyProjectile();
         myWorld.addObject(projectile, myWorld.getPlayer().getX(), myWorld.getPlayer().getY());
+        projectile.setRotation(myWorld.getPlayer().getRotation());
         }
     }
 }
