@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyWorld extends World
+public class Lvl1 extends World
 {
     Player mainPlayer = new Player();
 
@@ -14,10 +14,15 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
-    public MyWorld()
+    public Lvl1()
     {    
         super(1536, 864, 1);
         
         addObject(mainPlayer, 196, 188);
+    }
+    
+    public Player getPlayer()
+    {
+        return mainPlayer;
     }
 }

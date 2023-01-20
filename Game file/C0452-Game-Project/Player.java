@@ -32,6 +32,7 @@ public class Player extends Actor
     {
         movement();
         faceMouse();
+        shootProjectile();
         
         frame++;
     }
@@ -92,6 +93,17 @@ public class Player extends Actor
             mouseX = Greenfoot.getMouseInfo().getX();
             mouseY = Greenfoot.getMouseInfo().getY();
             turnTowards(mouseX, mouseY);
+        }
+    }
+    
+    public void shootProjectile()
+    {
+        if(Greenfoot.mouseClicked(null)){
+        World world = getWorld();
+        Lvl1 myWorld = (Lvl1)world;
+        
+        DummyProjectile projectile = new DummyProjectile();
+        myWorld.addObject(projectile, myWorld.getPlayer().getX(), myWorld.getPlayer().getY());
         }
     }
 }
