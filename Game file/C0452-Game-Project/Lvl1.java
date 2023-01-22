@@ -42,13 +42,13 @@ public class Lvl1 extends World
     private void prepare()
     {
         LargeWall largeWall = new LargeWall();
-        addObject(largeWall,267,239);
+        addObject(largeWall,288,269);
         LargeVerticalWall largeVerticalWall = new LargeVerticalWall();
         addObject(largeVerticalWall,635,259);
         LargeVerticalWall largeVerticalWall2 = new LargeVerticalWall();
         addObject(largeVerticalWall2,299,597);
         MediumWall mediumWall = new MediumWall();
-        addObject(mediumWall,402,594);
+        addObject(mediumWall,391, 468);
         MediumVerticalWall mediumVerticalWall = new MediumVerticalWall();
         addObject(mediumVerticalWall,624,667);
         MediumWall mediumWall2 = new MediumWall();
