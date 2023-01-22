@@ -25,7 +25,7 @@ public class Player extends Actor
     int divisor = 10;
     
     public Player(){
-        getImage().scale(getImage().getWidth()/3, getImage().getHeight()/3);
+        getImage().scale(getImage().getWidth()/5, getImage().getHeight()/5);
     }
     public void act()
     {
@@ -73,7 +73,7 @@ public class Player extends Actor
         if(frame%8 == 0)
         {
             setImage("PlayerMove" + animationCounter + ".png");
-            getImage().scale(getImage().getWidth()/3, getImage().getHeight()/3);
+            getImage().scale(getImage().getWidth()/5, getImage().getHeight()/5);
             animationCounter++;
             
             if(animationCounter > 3)
