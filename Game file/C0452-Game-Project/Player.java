@@ -56,6 +56,11 @@ public class Player extends Actor
         {
             animate();
             setLocation(getX(), getY() - speed);
+            
+            if(isTouching(Wall.class))
+            {
+                setLocation(getX(), getY() + speed);
+            }
         }
         
         if(Greenfoot.isKeyDown("s") && Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("s") && Greenfoot.isKeyDown("d"))
@@ -67,15 +72,30 @@ public class Player extends Actor
         {
             animate();
             setLocation(getX(), getY() + speed);
+            
+            if(isTouching(Wall.class))
+            {
+                setLocation(getX(), getY() - speed);
+            }
         }
         if(Greenfoot.isKeyDown("d"))
         {
             animate();
             setLocation(getX() + speed, getY());
+            
+            if(isTouching(Wall.class))
+            {
+                setLocation(getX() - speed, getY());
+            }
         }if(Greenfoot.isKeyDown("a"))
         {
             animate();
             setLocation(getX() - speed, getY());
+            
+            if(isTouching(Wall.class))
+            {
+                setLocation(getX() + speed, getY());
+            }
         }
     }
     
