@@ -47,11 +47,22 @@ public class Player extends Actor
             divisor = 3;
         }
         
+        if(Greenfoot.isKeyDown("w") && Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("w") && Greenfoot.isKeyDown("d"))
+        {
+            speed = 0;
+        }
+        
         if(Greenfoot.isKeyDown("w"))
         {
             animate();
             setLocation(getX(), getY() - speed);
         }
+        
+        if(Greenfoot.isKeyDown("s") && Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("s") && Greenfoot.isKeyDown("d"))
+        {
+            speed = 0;
+        }
+        
         if(Greenfoot.isKeyDown("s"))
         {
             animate();
