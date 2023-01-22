@@ -128,11 +128,11 @@ public class Player extends Actor
     {
         if(Greenfoot.mouseClicked(null)){
         World world = getWorld();
-        Lvl1 myWorld = (Lvl1)world;
+        Lvl1 myWorld1 = (Lvl1)world;
         
         DummyProjectile projectile = new DummyProjectile();
-        myWorld.addObject(projectile, myWorld.getPlayer().getX(), myWorld.getPlayer().getY());
-        projectile.setRotation(myWorld.getPlayer().getRotation());
+        myWorld1.addObject(projectile, myWorld1.getPlayer().getX(), myWorld1.getPlayer().getY());
+        projectile.setRotation(myWorld1.getPlayer().getRotation());
         }
     }
 }

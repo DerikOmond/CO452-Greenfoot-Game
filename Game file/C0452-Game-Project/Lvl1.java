@@ -12,6 +12,7 @@ public class Lvl1 extends World
     public double gameSeconds = frame/60;
 
     Player mainPlayer = new Player();
+    DummyProjectile projectile = new DummyProjectile();
 
     /**
      * Constructor for objects of class MyWorld.
@@ -35,6 +36,12 @@ public class Lvl1 extends World
     {
         return gameSeconds;
     }
+    
+    public DummyProjectile getProjectile()
+    {
+        return projectile;
+    }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.

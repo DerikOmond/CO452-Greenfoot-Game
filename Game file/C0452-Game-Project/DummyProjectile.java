@@ -15,5 +15,18 @@ public class DummyProjectile extends Actor
     public void act()
     {
         move(15);
+        
+        deleteProjectile();
+    }
+    
+    public void deleteProjectile()
+    {
+        if(isTouching(Wall.class))
+        {
+            World world  = getWorld();
+            Lvl1 myWorld1 = (Lvl1)world;
+            
+            myWorld1.removeObject(this);
+        }
     }
 }
