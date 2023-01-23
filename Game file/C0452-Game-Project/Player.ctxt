@@ -12,5 +12,5 @@ comment4.target=void\ animate()
 comment5.params=
 comment5.target=void\ faceMouse()
 comment6.params=
-comment6.target=void\ shootProjectile()
+comment6.target=void\ shootFireball1()
 numComments=7

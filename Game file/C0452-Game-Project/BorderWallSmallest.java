@@ -1,20 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class SmallWall here.
+ * Write a description of class BorderWallSmallest here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class SmallWall extends Wall
+public class BorderWallSmallest extends Wall
 {
     /**
-     * Act - do whatever the SmallWall wants to do. This method is called whenever
+     * Act - do whatever the BorderWallSmallest wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public SmallWall()
+    public BorderWallSmallest()
     {
-        getImage().scale(getImage().getWidth() * 2, getImage().getWidth()/2);
+        getImage().scale(getImage().getWidth() * 2, getImage().getHeight() / 2);
     }
     
     public void act()

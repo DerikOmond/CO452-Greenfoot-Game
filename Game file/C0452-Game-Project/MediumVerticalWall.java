@@ -14,7 +14,7 @@ public class MediumVerticalWall extends Wall
      */
     public MediumVerticalWall()
     {
-        getImage().scale(getImage().getWidth(), getImage().getWidth() * 3);    
+        getImage().scale(getImage().getWidth()/2, getImage().getWidth() * 3);    
     }
     
     public void act()

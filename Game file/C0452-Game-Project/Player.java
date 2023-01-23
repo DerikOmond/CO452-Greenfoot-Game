@@ -29,9 +29,9 @@ public class Player extends Actor
     }
     public void act()
     {
+        shootFireball1();
         movement();
         faceMouse();
-        shootProjectile();
     }
     
     public void movement()
@@ -124,15 +124,15 @@ public class Player extends Actor
         }
     }
     
-    public void shootProjectile()
+    public void shootFireball1()
     {
         if(Greenfoot.mouseClicked(null)){
         World world = getWorld();
         Lvl1 myWorld1 = (Lvl1)world;
         
-        DummyProjectile projectile = new DummyProjectile();
-        myWorld1.addObject(projectile, myWorld1.getPlayer().getX(), myWorld1.getPlayer().getY());
-        projectile.setRotation(myWorld1.getPlayer().getRotation());
+        Fireball1 fireball1 = new Fireball1();
+        myWorld1.addObject(fireball1 , myWorld1.getPlayer().getX(), myWorld1.getPlayer().getY());
+        myWorld1.getFireball1().setRotation(myWorld1.getPlayer().getRotation());
         }
     }
 }

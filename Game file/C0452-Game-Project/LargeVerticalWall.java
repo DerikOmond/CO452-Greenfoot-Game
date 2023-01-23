@@ -14,7 +14,7 @@ public class LargeVerticalWall extends Wall
      */
     public LargeVerticalWall()
     {
-        getImage().scale(getImage().getWidth(), getImage().getWidth() * 6);
+        getImage().scale(getImage().getWidth()/2, getImage().getWidth() * 6);
     }
     
     public void act()

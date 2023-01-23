@@ -10,7 +10,7 @@ public class MediumWall extends Wall
 {
     public MediumWall()
     {
-        getImage().scale(getImage().getWidth() * 3, getImage().getWidth());    
+        getImage().scale(getImage().getWidth() * 3, getImage().getWidth()/2);    
     }
     
     /**

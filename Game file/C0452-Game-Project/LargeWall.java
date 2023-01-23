@@ -18,7 +18,7 @@ public class LargeWall extends Wall
     
     public LargeWall()
     {
-        getImage().scale(getImage().getWidth() * 6, getImage().getWidth());
+        getImage().scale(getImage().getWidth() * 6, getImage().getWidth()/2);
     }
     
     public void act()

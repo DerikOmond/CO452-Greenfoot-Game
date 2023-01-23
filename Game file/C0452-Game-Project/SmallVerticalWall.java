@@ -14,7 +14,7 @@ public class SmallVerticalWall extends Wall
      */
     public SmallVerticalWall()
     {
-        getImage().scale(getImage().getWidth(), getImage().getWidth() * 2);
+        getImage().scale(getImage().getWidth()/2, getImage().getWidth() * 2);
     }
     
     public void act()

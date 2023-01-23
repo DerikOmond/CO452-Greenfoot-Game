@@ -12,8 +12,8 @@ public class Lvl1 extends World
     public double gameSeconds = frame/60;
 
     Player mainPlayer = new Player();
-    DummyProjectile projectile = new DummyProjectile();
-
+    Fireball1 fireball1 = new Fireball1();
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -37,9 +37,9 @@ public class Lvl1 extends World
         return gameSeconds;
     }
     
-    public DummyProjectile getProjectile()
+    public Fireball1 getFireball1()
     {
-        return projectile;
+        return fireball1;
     }
     
     /**
@@ -48,6 +48,7 @@ public class Lvl1 extends World
      */
     private void prepare()
     {
+        // Internal Walls
         LargeWall largeWall = new LargeWall();
         addObject(largeWall,288,269);
         LargeVerticalWall largeVerticalWall = new LargeVerticalWall();
@@ -78,6 +79,21 @@ public class Lvl1 extends World
         addObject(smallWall,1166,448);
         SmallWall smallWall2 = new SmallWall();
         addObject(smallWall2,1344,619);
-        smallWall2.setLocation(1344,619);
+
+        //External Walls
+        BorderWall borderWall = new BorderWall();
+        addObject(borderWall,764,88);
+        BorderWallSmaller borderWallSmaller = new BorderWallSmaller();
+        addObject(borderWallSmaller,625,769);
+        BorderWallSmallest borderWallSmallest = new BorderWallSmallest();
+        addObject(borderWallSmallest,1381,768);
+        VerticalBorderWall verticalBorderWall = new VerticalBorderWall();
+        addObject(verticalBorderWall,1418,434);
+        VerticalBorderWall verticalBorderWall2 = new VerticalBorderWall();
+        addObject(verticalBorderWall2,116,429);
+        VerticalBorderWallSmaller verticalBorderWallSmaller = new VerticalBorderWallSmaller();
+        addObject(verticalBorderWallSmaller,1336,814);
+        VerticalBorderWallSmaller verticalBorderWallSmaller2 = new VerticalBorderWallSmaller();
+        addObject(verticalBorderWallSmaller2,1135,817);
     }
 }
