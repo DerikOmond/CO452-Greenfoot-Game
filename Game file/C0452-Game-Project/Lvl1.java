@@ -25,6 +25,7 @@ public class Lvl1 extends World
 
         addObject(mainPlayer, 196, 188);
         prepare();
+        addObject(new GifActor(), getWidth()/2, getHeight());
     }
 
     public Player getPlayer()
