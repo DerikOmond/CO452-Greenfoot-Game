@@ -141,8 +141,7 @@ public class Player extends Actor
     
     public boolean touchingSpike()
     {
-        Actor cactus = getOneObjectAtOffset(0, 0, Spike.class);
-        if(cactus != null)
+        if(isTouching(Spike.class))
         {
             return true;
         }

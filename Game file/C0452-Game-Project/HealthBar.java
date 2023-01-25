@@ -53,7 +53,8 @@ public class HealthBar extends Bar
         }
         if(health <= 0)
         {
-            getWorld().showText("You Have Died :( \nBetter Luck Next Time \nYour Time: " + myWorld1.getTime() + " Seconds" , getWorld().getWidth() / 2, getWorld().getHeight() / 2);
+            getWorld().showText("You Have Died :( \nBetter Luck Next Time", getWorld().getWidth() / 2, getWorld().getHeight() / 2);
+            Greenfoot.stop();           
         }
     }
     

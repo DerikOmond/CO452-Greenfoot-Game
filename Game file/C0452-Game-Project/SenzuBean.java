@@ -12,13 +12,24 @@ public class SenzuBean extends Item
      * Act - do whatever the SenzuBean wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public SenzuBean()
+    Magix shots;
+    public SenzuBean(Magix shots)
     {
-        getImage().scale(getImage().getWidth() / 4, getImage().getHeight() / 4);   
+        this.shots = shots;
+        getImage().scale(getImage().getWidth() / 5, getImage().getHeight() / 5);   
     }
     
     public void act()
     {
-        // Add your action code here.
+        senzuMagix();
+    }
+    
+    public void senzuMagix()
+    {
+        if(isTouching(Player.class))
+        {
+            shots.shots += 15;
+            getWorld().removeObject(this);
+        }
     }
 }

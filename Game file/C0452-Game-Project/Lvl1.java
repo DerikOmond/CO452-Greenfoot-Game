@@ -14,6 +14,7 @@ public class Lvl1 extends World
     Player mainPlayer = new Player();
     Fireball1 fireball1 = new Fireball1();
     HealthBar healthBar = new HealthBar();
+    Magix shots = new Magix();
     
     /**
      * Constructor for objects of class MyWorld.
@@ -112,33 +113,36 @@ public class Lvl1 extends World
         addObject(spike7,1352,240);
         Spike spike8 = new Spike();
         addObject(spike8,1350,668);
-        
+
         //Food items
-        SenzuBean senzuBean = new SenzuBean();
+        SenzuBean senzuBean = new SenzuBean(shots);
         addObject(senzuBean,521,198);
-        SenzuBean senzuBean2 = new SenzuBean();
+        SenzuBean senzuBean2 = new SenzuBean(shots);
         addObject(senzuBean2,877,150);
-        SenzuBean senzuBean3 = new SenzuBean();
+        SenzuBean senzuBean3 = new SenzuBean(shots);
         addObject(senzuBean3,182,640);
-        SenzuBean senzuBean4 = new SenzuBean();
+        SenzuBean senzuBean4 = new SenzuBean(shots);
         addObject(senzuBean4,249,636);
-        Mackiez mackiez = new Mackiez();
+        Mackiez mackiez = new Mackiez(shots);
         addObject(mackiez,401,689);
-        Pizza pizza = new Pizza();
+        Pizza pizza = new Pizza(shots);
         addObject(pizza,705,493);
-        Pizza pizza2 = new Pizza();
+        Pizza pizza2 = new Pizza(shots);
         addObject(pizza2,1212,552);
-        Mackiez mackiez2 = new Mackiez();
+        Mackiez mackiez2 = new Mackiez(shots);
         addObject(mackiez2,934,689);
-        Pizza pizza3 = new Pizza();
+        Pizza pizza3 = new Pizza(shots);
         addObject(pizza3,1041,416);
-        Pizza pizza4 = new Pizza();
+        Pizza pizza4 = new Pizza(shots);
         addObject(pizza4,368,366);
-        
+
         //Player
         addObject(mainPlayer, 196, 188);
 
         //Player health
         addObject(healthBar,getPlayer().getX(), getPlayer().getY() - 80);
+
+        //Magix counter
+        addObject(shots,164,50);
     }
 }
