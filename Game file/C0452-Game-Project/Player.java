@@ -5,7 +5,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * 
  * @author (your name) 
  * @version (a version number or a date)
- */
+ */ 
 public class Player extends Actor
 {
     /**
@@ -132,12 +132,17 @@ public class Player extends Actor
     public void shootFireball1()
     {
         if(Greenfoot.mouseClicked(null)){
+            Greenfoot.playSound("pew.mp3");
         World world = getWorld();
         Lvl1 myWorld1 = (Lvl1)world;
         
+        
         Fireball1 fireball1 = new Fireball1();
+        
         myWorld1.addObject(fireball1 , myWorld1.getPlayer().getX(), myWorld1.getPlayer().getY());
         myWorld1.getFireball1().setRotation(myWorld1.getPlayer().getRotation());
+        
+        
         }
     }
     
