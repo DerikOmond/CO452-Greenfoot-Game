@@ -13,6 +13,7 @@ public class Lvl1 extends World
 
     Player mainPlayer = new Player();
     Fireball1 fireball1 = new Fireball1();
+    HealthBar healthBar = new HealthBar();
     
     /**
      * Constructor for objects of class MyWorld.
@@ -22,10 +23,7 @@ public class Lvl1 extends World
     {    super(1536, 864, 1);
 
         frame++;
-
-        addObject(mainPlayer, 196, 188);
         prepare();
-        addObject(new GifActor(), getWidth()/2, getHeight());
     }
 
     public Player getPlayer()
@@ -96,5 +94,29 @@ public class Lvl1 extends World
         addObject(verticalBorderWallSmaller,1336,814);
         VerticalBorderWallSmaller verticalBorderWallSmaller2 = new VerticalBorderWallSmaller();
         addObject(verticalBorderWallSmaller2,1135,817);
+        
+        //Spikes
+        Spike spike = new Spike();
+        addObject(spike,176,325);
+        Spike spike2 = new Spike();
+        addObject(spike2,674,638);
+        Spike spike3 = new Spike();
+        addObject(spike3,739,648);
+        Spike spike4 = new Spike();
+        addObject(spike4,348,513);
+        Spike spike5 = new Spike();
+        addObject(spike5,737,154);
+        Spike spike6 = new Spike();
+        addObject(spike6,739,226);
+        Spike spike7 = new Spike();
+        addObject(spike7,1352,240);
+        Spike spike8 = new Spike();
+        addObject(spike8,1350,668);
+        
+        //Player
+        addObject(mainPlayer, 196, 188);
+        
+        //Player health
+        addObject(healthBar,getPlayer().getX(), getPlayer().getY() - 80);
     }
 }

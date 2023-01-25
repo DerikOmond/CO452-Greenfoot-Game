@@ -20,15 +20,18 @@ public class Player extends Actor
 
     //frame tracker
     private int frame;
+    private int worldTime = frame / 60;
     
     private int animationCounter = 0;
-    int divisor = 10;
+    int divisor;
     
     public Player(){
         getImage().scale(getImage().getWidth()/5, getImage().getHeight()/5);
     }
+    
     public void act()
     {
+        frame++;
         shootFireball1();
         movement();
         faceMouse();
@@ -39,12 +42,12 @@ public class Player extends Actor
         if(Greenfoot.isKeyDown("shift"))
         {
             speed = 8;
-            divisor = 10;
+            divisor = 3;
         }
         else
         {
             speed = 5;
-            divisor = 3;
+            divisor = 10;
         }
         
         if(Greenfoot.isKeyDown("w") && Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("w") && Greenfoot.isKeyDown("d"))
@@ -101,7 +104,7 @@ public class Player extends Actor
     
     public void animate()
     {
-        if(frame%8 == 0)
+        if(frame%divisor == 0)
         {
             setImage("PlayerMove" + animationCounter + ".png");
             getImage().scale(getImage().getWidth()/5, getImage().getHeight()/5);
