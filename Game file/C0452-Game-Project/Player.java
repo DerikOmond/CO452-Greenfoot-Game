@@ -31,6 +31,7 @@ public class Player extends Actor
     
     public void act()
     {
+        checkPosition();
         frame++;
         shootFireball1();
         movement();
@@ -150,4 +151,14 @@ public class Player extends Actor
             return false;
         }
     }
+    
+    public void checkPosition()
+    {
+        if ((getX() >= getWorld().getWidth() - 10) && (getY() >= getWorld().getHeight() - 10)) 
+        {
+            Greenfoot.setWorld(new Lvl2());
+        }
+    }
 }
+
+
