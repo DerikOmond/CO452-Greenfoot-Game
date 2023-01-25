@@ -36,6 +36,7 @@ public class Player extends Actor
         shootFireball1();
         movement();
         faceMouse();
+
     }
     
     public void movement()
@@ -143,6 +144,17 @@ public class Player extends Actor
     public boolean touchingSpike()
     {
         if(isTouching(Spike.class))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public boolean touchingToxic()
+    {
+        if(isTouching(Toxic.class))
         {
             return true;
         }

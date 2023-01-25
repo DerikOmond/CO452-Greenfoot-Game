@@ -10,6 +10,7 @@ public class Lvl1 extends World
 {
     public int frame = 0;
     public double gameSeconds = frame/60;
+    public int i = 0;
 
     Player mainPlayer = new Player();
     Fireball1 fireball1 = new Fireball1();
@@ -20,11 +21,18 @@ public class Lvl1 extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+
     public Lvl1()
     {    super(1536, 864, 1);
 
         frame++;
         prepare();
+        for (i=0; i <12 ; i++){
+        int x = Greenfoot.getRandomNumber(getWidth()-1);
+       int y = Greenfoot.getRandomNumber(getHeight()-1);
+       addObject (new Toxic(), x, y);
+    }
+
     }
 
     public Player getPlayer()
