@@ -135,4 +135,17 @@ public class Player extends Actor
         myWorld1.getFireball1().setRotation(myWorld1.getPlayer().getRotation());
         }
     }
+    
+    public boolean touchingSpike()
+    {
+        Actor cactus = getOneObjectAtOffset(0, 0, Spike.class);
+        if(cactus != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

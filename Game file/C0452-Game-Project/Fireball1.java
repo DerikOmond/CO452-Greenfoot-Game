@@ -43,7 +43,9 @@ public class Fireball1 extends Actor
             World world  = getWorld();
             Lvl1 myWorld1 = (Lvl1)world;
             
-            myWorld1.removeObject(this);
+            getWorld().addObject(new Explosion1(),getX(), getY());
+
+            getWorld().removeObject(this);
         }
     }
 }
