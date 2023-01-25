@@ -94,7 +94,7 @@ public class Lvl1 extends World
         addObject(verticalBorderWallSmaller,1336,814);
         VerticalBorderWallSmaller verticalBorderWallSmaller2 = new VerticalBorderWallSmaller();
         addObject(verticalBorderWallSmaller2,1135,817);
-        
+
         //Spikes
         Spike spike = new Spike();
         addObject(spike,176,325);
@@ -113,9 +113,31 @@ public class Lvl1 extends World
         Spike spike8 = new Spike();
         addObject(spike8,1350,668);
         
+        //Food items
+        SenzuBean senzuBean = new SenzuBean();
+        addObject(senzuBean,521,198);
+        SenzuBean senzuBean2 = new SenzuBean();
+        addObject(senzuBean2,877,150);
+        SenzuBean senzuBean3 = new SenzuBean();
+        addObject(senzuBean3,182,640);
+        SenzuBean senzuBean4 = new SenzuBean();
+        addObject(senzuBean4,249,636);
+        Mackiez mackiez = new Mackiez();
+        addObject(mackiez,401,689);
+        Pizza pizza = new Pizza();
+        addObject(pizza,705,493);
+        Pizza pizza2 = new Pizza();
+        addObject(pizza2,1212,552);
+        Mackiez mackiez2 = new Mackiez();
+        addObject(mackiez2,934,689);
+        Pizza pizza3 = new Pizza();
+        addObject(pizza3,1041,416);
+        Pizza pizza4 = new Pizza();
+        addObject(pizza4,368,366);
+        
         //Player
         addObject(mainPlayer, 196, 188);
-        
+
         //Player health
         addObject(healthBar,getPlayer().getX(), getPlayer().getY() - 80);
     }
