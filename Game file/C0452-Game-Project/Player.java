@@ -154,11 +154,15 @@ public class Player extends Actor
     
     public void checkPosition()
     {
-        if ((getX() >= getWorld().getWidth() - 10) && (getY() >= getWorld().getHeight() - 10)) 
+        if (getX() >= 1248 && getY() >= 859) 
         {
             Greenfoot.setWorld(new Lvl2());
         }
     }
+    
+    
+    
+    
 }
 
 
