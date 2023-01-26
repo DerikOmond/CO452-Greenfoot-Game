@@ -27,7 +27,7 @@ public class Lvl1 extends World
 
         frame++;
         prepare();
-        for (i=0; i <12 ; i++){
+        for (i=0; i <8 ; i++){
         int x = Greenfoot.getRandomNumber(getWidth()-1);
        int y = Greenfoot.getRandomNumber(getHeight()-1);
        addObject (new Toxic(), x, y);
