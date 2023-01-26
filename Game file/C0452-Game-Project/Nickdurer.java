@@ -19,29 +19,22 @@ public class Nickdurer extends Actor
         //shoot();
         fireball2();
       }
-    
-   
-            
-            
-            
-            
+    public Nickdurer(){
+        getImage().scale(getImage().getWidth()/4, getImage().getHeight()/4);
+    }            
     public void follow()
     {
         World world = getWorld();
         Lvl2 myWorld2 = (Lvl2)world;
         
-        turnTowards(myWorld2.mainPlayer.getX() , myWorld2.mainPlayer.getY());
-        move(2);
+        turnTowards(myWorld2.mainPlayer1.getX() , myWorld2.mainPlayer1.getY());
+        move(1);
         
     }
-  
-            
-    
-
     public void fireball2()
     {
         int shoot = Greenfoot.getRandomNumber(100);
-        if (shoot < 2)
+        if (shoot < 1)
         {
             Fireball2 fireballBlue=new Fireball2();
             getWorld().addObject(fireballBlue, getX(), getY());

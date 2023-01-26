@@ -16,7 +16,6 @@ public class GifActor extends Actor
      */
     public void act()
     {
-        setLocation(786,757);
         setImage(myGif1.getCurrentImage());
         if (firstImage == null) // initializing (only executed during first act step)
     {
