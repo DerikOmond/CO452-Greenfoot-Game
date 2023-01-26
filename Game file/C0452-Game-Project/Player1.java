@@ -31,12 +31,11 @@ public class Player1 extends Actor
     
     public void act()
     {
-        checkPosition();
         frame++;
         shootFireballBossFight();
         movement();
         faceMouse();
-
+        checkPosition2();
     }
     
     public void movement()
@@ -129,6 +128,12 @@ public class Player1 extends Actor
         }
     }
     
+        public void checkPosition2() {
+    if (getX() == 46 && getY() == 237) {
+        Greenfoot.playSound("musiki.mp3");
+    }
+}
+    
     public void shootFireballBossFight()
     {
         if(Greenfoot.mouseClicked(null)){
@@ -163,14 +168,6 @@ public class Player1 extends Actor
         else
         {
             return false;
-        }
-    }
-    
-    public void checkPosition()
-    {
-        if (getX() >= 1248 && getY() >= 859) 
-        {
-            Greenfoot.setWorld(new Lvl2());
         }
     }
     

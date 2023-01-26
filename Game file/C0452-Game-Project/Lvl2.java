@@ -13,7 +13,7 @@ public class Lvl2 extends World
      * Constructor for objects of class Lvl2.
      * 
      */
-    
+    GreenfootSound backgroundMusic = new GreenfootSound("musiki.mp3");
     Player1 mainPlayer1 = new Player1();
     Nickdurer Nickdurer = new Nickdurer();
     HealthBar0 healthBar0 = new HealthBar0();
@@ -36,6 +36,8 @@ public class Lvl2 extends World
        int y = Greenfoot.getRandomNumber(getHeight()-1);
        addObject (new Toxic(), x, y);
     }
+    backgroundMusic.setVolume(40);
+    backgroundMusic.playLoop();
 }
     
     public Fireball2 getFireball2()
