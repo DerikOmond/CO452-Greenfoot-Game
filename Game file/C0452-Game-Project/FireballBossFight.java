@@ -41,7 +41,7 @@ public class FireballBossFight extends Actor
             World world  = getWorld();
             Lvl2 myWorld2 = (Lvl2)world;
             
-            getWorld().addObject(new Explosion1(),getX(), getY());
+            getWorld().addObject(new Explosion2(),getX(), getY());
 
             getWorld().removeObject(this);
         }

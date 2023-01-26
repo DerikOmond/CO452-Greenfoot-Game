@@ -6,35 +6,36 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Explosion1 extends Actor
+public class Explosion2 extends Actor
 {
     /**
      * Act - do whatever the Explosion1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    GifImage explosion1 = new GifImage("explosion1.gif");
+    GifImage explosion2 = new GifImage("explosion1.gif");
     
     private int timeLimit = 30;
-    public Explosion1()
+    public Explosion2()
     {
-        setImage(explosion1.getCurrentImage());
+        setImage(explosion2.getCurrentImage());
     }
     
     public void act()
     {
         timeLimit--;
         
-        deleteExplosion1();
+        deleteExplosion2();
     }
     
-    public void deleteExplosion1()
+    public void deleteExplosion2()
     {
         if(timeLimit < 1)
         {
             World world  = getWorld();
-            Lvl1 myWorld1 = (Lvl1)world;
+            Lvl2 myWorld2 = (Lvl2)world;
             
-            myWorld1.removeObject(this);
+            myWorld2.removeObject(this);
         }
     }
 }
+

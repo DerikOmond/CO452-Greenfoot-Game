@@ -190,13 +190,5 @@ public class Player1 extends Actor
         }
     }
     
-    public void checkPosition2()
-    {
-        if (getX() >= 46 && getY() >=237)
-        {
-            Greenfoot.playSound("musiki.mp3");
-        }
-    }
-    
     
 }
