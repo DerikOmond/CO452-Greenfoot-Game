@@ -36,7 +36,7 @@ public class Player extends Actor
         shootFireball1();
         movement();
         faceMouse();
-
+        checkPosition2();
     }
     
     public void movement()
@@ -103,6 +103,16 @@ public class Player extends Actor
             }
         }
     }
+    
+    
+    public void checkPosition2() {
+    if (getX() == 80 && getY() == 181) {
+        Greenfoot.playSound("musiki.mp3");
+    }
+}
+
+    
+    
     
     public void animate()
     {
