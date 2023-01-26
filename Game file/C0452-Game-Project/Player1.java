@@ -36,7 +36,7 @@ public class Player1 extends Actor
         shootFireballBossFight();
         movement();
         faceMouse();
-
+        checkPosition2();
     }
     
     public void movement()
@@ -165,12 +165,31 @@ public class Player1 extends Actor
             return false;
         }
     }
+    public boolean touchingBlueFlame()
+    {
+        if(isTouching(Fireball2.class))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     
     public void checkPosition()
     {
         if (getX() >= 1248 && getY() >= 859) 
         {
             Greenfoot.setWorld(new Lvl2());
+        }
+    }
+    
+    public void checkPosition2()
+    {
+        if (getX() >= 46 && getY() >=237)
+        {
+            Greenfoot.playSound("musiki.mp3");
         }
     }
     

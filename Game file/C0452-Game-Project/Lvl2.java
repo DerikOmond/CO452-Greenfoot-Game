@@ -17,6 +17,7 @@ public class Lvl2 extends World
     Player1 mainPlayer1 = new Player1();
     Nickdurer Nickdurer = new Nickdurer();
     HealthBar0 healthBar0 = new HealthBar0();
+    NickHealth bossHealth = new NickHealth();
     FireballBossFight fireballBossFight;
     Fireball2 fireball2;
     Magix shots = new Magix();
@@ -30,6 +31,7 @@ public class Lvl2 extends World
         addObject(new Nickdurer(), 950, 450);
         addObject(healthBar0,getPlayer1().getX(), getPlayer1().getY() - 80);
         addObject(shots,164,50);
+        addObject(bossHealth,getWidth()/2, 57);
         prepare();
         for (i=0; i <10 ; i++){
         int x = Greenfoot.getRandomNumber(getWidth()-1);
@@ -56,6 +58,11 @@ public class Lvl2 extends World
     public Magix getMagix()
     {
         return shots;
+    }
+    
+    public NickHealth getBossHealth()
+    {
+        return bossHealth;
     }
     
     private void prepare()

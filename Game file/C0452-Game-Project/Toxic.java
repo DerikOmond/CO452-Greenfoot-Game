@@ -14,7 +14,7 @@ public class Toxic extends Actor
      */
     public void removeToxic()
     {
-        if (isTouching(Fireball1.class))
+        if (isTouching(Fireball1.class) || isTouching(FireballBossFight.class))
         {
           getWorld().removeObject(this);
         }

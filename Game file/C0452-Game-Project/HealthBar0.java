@@ -55,6 +55,10 @@ public class HealthBar0 extends Bar
         {
             health0--;
         }
+        if(myWorld2.getPlayer1().touchingBlueFlame())
+        {
+            health0--;
+        }
         
         
         if(health0 <= 0)
