@@ -1,3 +1,2 @@
 # CO452-Greenfoot-Game
-Group project
-NickDurer the green
+We made a 2D game that has abillity to ....
