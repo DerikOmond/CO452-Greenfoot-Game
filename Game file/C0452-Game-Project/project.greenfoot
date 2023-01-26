@@ -19,6 +19,7 @@ class.SenzuBean.image=button-green.png
 class.SmallVerticalWall.image=Wall.jpg
 class.SmallWall.image=Wall.jpg
 class.Spike.image=spikes.jpg
+class.Toxic.image=toxic.png
 class.VerticalBorderWall.image=Wall.jpg
 class.VerticalBorderWallSmaller.image=Wall.jpg
 dependency1.from=Lvl1
@@ -256,11 +257,7 @@ editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
-<<<<<<< HEAD
 height=1048
-=======
-height=830
->>>>>>> dcefe9d3df5422a76d428d7fb6ea15eaa8c9daac
 package.numDependencies=45
 package.numTargets=30
 =======
