@@ -14,17 +14,22 @@ public class Lvl2 extends World
      * 
      */
     
-    Player mainPlayer = new Player();
+    Player1 mainPlayer1 = new Player1();
     Nickdurer Nickdurer = new Nickdurer();
+    HealthBar0 healthBar0 = new HealthBar0();
+    FireballBossFight fireballBossFight;
     Fireball2 fireball2;
+    Magix shots = new Magix();
     int i = 0;
     
     public Lvl2()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1536, 864, 1);
-        addObject(mainPlayer, 46, 237);
+        addObject(mainPlayer1, 46, 237);
         addObject(new Nickdurer(), 950, 450);
+        addObject(healthBar0,getPlayer1().getX(), getPlayer1().getY() - 80);
+        addObject(shots,164,50);
         prepare();
         for (i=0; i <10 ; i++){
         int x = Greenfoot.getRandomNumber(getWidth()-1);
@@ -37,6 +42,22 @@ public class Lvl2 extends World
     {
         return fireball2;
     }
+    
+    public Player1 getPlayer1()
+    {
+        return mainPlayer1;
+    }
+    
+    public FireballBossFight getFireballBossFight()
+    {
+        return fireballBossFight;
+    }
+    
+    public Magix getMagix()
+    {
+        return shots;
+    }
+    
     private void prepare()
     {
         BorderWallSmallest borderWallSmallest = new BorderWallSmallest();

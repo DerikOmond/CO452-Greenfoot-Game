@@ -32,9 +32,9 @@ public class Explosion1 extends Actor
         if(timeLimit < 1)
         {
             World world  = getWorld();
-            Lvl1 myWorld1 = (Lvl1)world;
+            Lvl2 myWorld2 = (Lvl2)world;
             
-            myWorld1.removeObject(this);
+            myWorld2.removeObject(this);
         }
     }
 }

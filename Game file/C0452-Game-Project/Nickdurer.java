@@ -27,7 +27,7 @@ public class Nickdurer extends Actor
         World world = getWorld();
         Lvl2 myWorld2 = (Lvl2)world;
         
-        turnTowards(myWorld2.mainPlayer.getX() , myWorld2.mainPlayer.getY());
+        turnTowards(myWorld2.mainPlayer1.getX() , myWorld2.mainPlayer1.getY());
         move(1);
         
     }
