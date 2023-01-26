@@ -32,6 +32,7 @@ public class Lvl1 extends World
        int y = Greenfoot.getRandomNumber(getHeight()-1);
        addObject (new Toxic(), x, y);
     }
+    addObject (new GifActor(), 786, 757);
 
     }
 
