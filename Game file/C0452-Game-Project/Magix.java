@@ -22,5 +22,15 @@ public class Magix extends Actor
     public void act()
     {
         setImage(new GreenfootImage("Magix: "+ shots, 40, Color.ORANGE, new Color (59, 124, 209, 0)));
+        
+        reduceMagix();
+    }
+    
+    public void reduceMagix()
+    {
+        if(Greenfoot.mouseClicked(null) && shots > 0)
+        {
+            shots--;
+        }
     }
 }
