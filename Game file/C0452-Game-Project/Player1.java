@@ -31,7 +31,6 @@ public class Player1 extends Actor
     
     public void act()
     {
-        checkPosition();
         frame++;
         shootFireballBossFight();
         movement();
@@ -128,6 +127,12 @@ public class Player1 extends Actor
             turnTowards(mouseX, mouseY);
         }
     }
+    
+        public void checkPosition2() {
+    if (getX() == 46 && getY() == 237) {
+        Greenfoot.playSound("musiki.mp3");
+    }
+}
     
     public void shootFireballBossFight()
     {
