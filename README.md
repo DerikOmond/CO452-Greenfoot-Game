@@ -13,9 +13,16 @@ We made a 2D game about a middle-aged man from London who was going after his gr
 <ol>- Move the mouse to looks different direction </ol>
 <br>
 <h1> Gameplay </h1> <br>
-Game consists of two levels and in first level player should try to avoid from toxins and spikes which will lead to health reduction and try to reach right down end of the map where the gate to next level exists additionally there objects on the Lvl1 map which are potions and if the main character goes over the potions it gets collected and Magix count will go up. In Level 2 Player will be able to see big boss Nickdurer in the middle of the screen and Nickdurer will constantly follow the main character and and shoots fireball which will also reduce the health. Game will be over when Nickdurer dies. 
+Game consists of two levels and in first level player should try to avoid from toxins and spikes which will lead to health reduction and try to reach right down end of the map where the gate to next level exists additionally there objects on the Lvl1 map which are potions and if the main character goes over the potions it gets collected and Magix count will go up. In Level 2 Player will be able to see big boss Nickdurer in the middle of the screen and Nickdurer will constantly follow the main character and and shoots fireball which will also reduce the health. Game will be over when Nickdurer dies. <br>
 
+<h1> Desgign and Features </h1>
+
+Level 1
 ![Lvl1](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/8e799cd6402bac9dbe107c8c464abab615b4ce8f/Game%20file/C0452-Game-Project/images/lvl1.jpg )
+Level 2
+![Lvl2](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/5e44fa38b8876f558ef07a4674f85b0eb67d917f/Game%20file/C0452-Game-Project/images/lvl%202.jpg) 
+
+
 
 
 
