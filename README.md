@@ -31,10 +31,15 @@ Game consists of two levels and in first level player should try to avoid from t
 ![Main](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/499dc47ec284c4192d05f26db291d332451b23df/Game%20file/C0452-Game-Project/images/PlayerMove3.png)
 
 <h2> Other objects </h2>
-![p1](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/potion1.png)
-![spike](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/spikes.jpg)
-![p2](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/potion2.png )
-![toxins](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/toxic.png)
-![gre](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/button-green.png)
+
+![P1](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/potion1.png)
+
+![Spike](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/spikes.jpg)
+
+![P2](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/potion2.png )
+
+![Toxins](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/toxic.png)
+
+![Gre](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/button-green.png)
 
 
