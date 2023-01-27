@@ -34,7 +34,7 @@ Game consists of two levels and in first level player should try to avoid from t
 
 ![P1](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/potion1.png)
 ![P2](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/potion2.png )
-![Gre](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/button-green.png)
+![Gre](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/button-green.png) <br>
 ![Spike](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/spikes.jpg)
 ![Toxins](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/toxic.png)
 
