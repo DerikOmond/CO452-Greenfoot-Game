@@ -17,20 +17,24 @@ Game consists of two levels and in first level player should try to avoid from t
 
 <h1> Desgign and Features </h1>
 
-Level 1
+<h2> Level 1 </h2>
 
 ![Lvl1](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/8e799cd6402bac9dbe107c8c464abab615b4ce8f/Game%20file/C0452-Game-Project/images/lvl1.jpg )
 
-Level 2
+<h2> Level 2 </h2>
 
 ![Lvl2](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/5e44fa38b8876f558ef07a4674f85b0eb67d917f/Game%20file/C0452-Game-Project/images/lvl%202.jpg) 
 
-Characters
+<h2> Characters </h2>
 
 ![Nick](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/499dc47ec284c4192d05f26db291d332451b23df/Game%20file/C0452-Game-Project/images/Nick-Walking%20gif.gif)
 ![Main](https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/499dc47ec284c4192d05f26db291d332451b23df/Game%20file/C0452-Game-Project/images/PlayerMove3.png)
 
-
-
+<h2> Other objects </h2>
+https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/potion1.png
+https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/spikes.jpg
+https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/potion2.png 
+https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/toxic.png
+https://github.com/DerikOmond/CO452-Greenfoot-Game/blob/d11e58e675253fefb4ba9f377455af987c347793/Game%20file/C0452-Game-Project/images/button-green.png
 
 
